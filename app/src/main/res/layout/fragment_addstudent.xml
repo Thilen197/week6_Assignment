@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddstudentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.AddStudentFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Details"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/etage"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Select Gender"
+            android:textSize="20sp"
+            />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbmale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/rbothers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="20sp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etaddress"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/etimg"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:hint="Image Link Here"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="375sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2196F3"
+            android:text="SAVE"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
